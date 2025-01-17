@@ -1,29 +1,40 @@
 # Tennis Analysis
 
 ## Introduction
-This project analyzes Tennis players in a video to measure their speed, ball shot speed and number of shots. This project will detect players and the tennis ball using YOLO and also utilizes CNNs to extract court keypoints. 
+This project provides an in-depth analysis of tennis gameplay by detecting and tracking players and the tennis ball in video footage. It measures player speed, ball shot speed, and the number of shots during a match. The system utilizes YOLO for object detection and CNNs for court keypoint extraction, ensuring accurate analysis and visualization.
 
 ## Output Videos
-Here is a screenshot from one of the output videos:
+Below is a screenshot from one of the generated output videos showcasing the analysis process:
 
 ![Screenshot](output_videos/screenshot.jpeg)
 
 ## Models Used
-* YOLO v8 for player detection
-* Fine Tuned YOLO for tennis ball detection
-* Court Key point extraction
+This project leverages the following pre-trained and fine-tuned models:
 
-* Trained YOLOV5 model: https://drive.google.com/file/d/1UZwiG1jkWgce9lNhxJ2L0NVjX1vGM05U/view?usp=sharing
-* Trained tennis court key point model: https://drive.google.com/file/d/1QrTOF1ToQ4plsSZbkBs3zOLkVt3MBlta/view?usp=sharing
+- **YOLO v8:** For player detection.  
+- **Fine-Tuned YOLO:** For tennis ball detection.  
+- **CNNs for Court Keypoint Extraction:** Used to extract tennis court keypoints.  
+
+### Pre-trained Models:
+- [Trained YOLOv5 model for tennis ball detection](https://drive.google.com/file/d/1UZwiG1jkWgce9lNhxJ2L0NVjX1vGM05U/view?usp=sharing)  
+- [Trained model for tennis court keypoint extraction](https://drive.google.com/file/d/1QrTOF1ToQ4plsSZbkBs3zOLkVt3MBlta/view?usp=sharing)  
 
 ## Training
-* Tennis ball detetcor with YOLO: training/tennis_ball_detector_training.ipynb
-* Tennis court keypoint with Pytorch: training/tennis_court_keypoints_training.ipynb
+To train the models used in this project, refer to the following notebooks:  
+
+- **Tennis Ball Detector with YOLO:** [`training/tennis_ball_detector_training.ipynb`](training/tennis_ball_detector_training.ipynb)  
+- **Tennis Court Keypoint Detection with PyTorch:** [`training/tennis_court_keypoints_training.ipynb`](training/tennis_court_keypoints_training.ipynb)  
 
 ## Requirements
-* python3.8
-* ultralytics
-* pytroch
-* pandas
-* numpy 
-* opencv
+Ensure the following dependencies are installed before running the project:  
+
+- Python 3.8  
+- ultralytics  
+- pytorch  
+- pandas  
+- numpy  
+- opencv-python  
+
+To install all requirements, run:  
+```bash
+pip install -r requirements.txt
