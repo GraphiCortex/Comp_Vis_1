@@ -1,4 +1,4 @@
-# Tennis Analysis
+O9# Tennis Analysis
 
 ## Introduction
 This project provides an in-depth analysis of tennis gameplay by detecting and tracking players and the tennis ball in video footage. It measures player speed, ball shot speed, and the number of shots during a match. The system utilizes YOLO for object detection and CNNs for court keypoint extraction, ensuring accurate analysis and visualization.
@@ -34,7 +34,3 @@ Ensure the following dependencies are installed before running the project:
 - pandas  
 - numpy  
 - opencv-python  
-
-To install all requirements, run:  
-```bash
-pip install -r requirements.txt
